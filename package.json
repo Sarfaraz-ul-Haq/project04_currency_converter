@@ -1,0 +1,26 @@
+{
+  "name": "sarfaraz-currency-converter",
+  "version": "1.0.0",
+  "description": "The console-based TypeScript app is used to convert currencies: the users enter a certain amount of money in one currency and set the currency they want to check the monetary value of.",
+  "main": "dist/app.js",
+  "type": "module",
+  "bin": {
+    "sarfaraz-currency-converter": "dist/app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.14",
+    "node-banner": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.17"
+  }
+}
