@@ -1,6 +1,6 @@
 import startingApp from "./startingApp.js";
 import displayTitleAndTagline from "./displayTitle.js";
-import convertCurrency from "./currencyConversion.js";
+import convertCurrency from "./convertCurrency.js";
 import useAppAgain from "./useAppAgain.js";
 
 async function main() {

@@ -12,20 +12,19 @@ async function getCurrencyData(): Promise<CurrencyData> {
     },
 
     {
-      name: "amount",
-      type: "number",
-      message: chalk.green(`\n Enter your amount`),
-    },
-
-    {
       name: "convertTo",
       type: "list",
       choices: ["USD", "PKR", "SAR", "EUR"],
       message: chalk.green(`\n Choose a currency to convert to:`),
     },
+    {
+      name: "amount",
+      type: "number",
+      message: chalk.green(`\n Enter your amount`),
+    },
   ]);
-  const { convertFrom, amount, convertTo } = currencyData;
-  return { convertFrom, amount, convertTo };
+  const { convertFrom, convertTo, amount } = currencyData;
+  return { convertFrom, convertTo, amount };
 }
 
 export default getCurrencyData;
