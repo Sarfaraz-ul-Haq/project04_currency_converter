@@ -3,7 +3,7 @@ import conversionRates from "./conversionRates.js";
 import chalk from "chalk";
 
 async function convertCurrency(): Promise<void> {
-  const { convertFrom, amount, convertTo } =
+  const { convertFrom, convertTo, amount } =
     await promptUserToEnterCurrencyData();
   if (convertFrom == "USD" && convertTo == "PKR") {
     console.log(
