@@ -2,7 +2,7 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 import CurrencyData from "./interface.js";
 
-async function getCurrencyData(): Promise<CurrencyData> {
+async function getCurrencyData() {
   const currencyData = await inquirer.prompt([
     {
       name: "convertFrom",
@@ -23,8 +23,8 @@ async function getCurrencyData(): Promise<CurrencyData> {
       message: chalk.green(`\n Enter your amount`),
     },
   ]);
-  const { convertFrom, convertTo, amount } = currencyData;
-  return { convertFrom, convertTo, amount };
+
+  return currencyData;
 }
 
 export default getCurrencyData;
